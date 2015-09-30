@@ -1,0 +1,53 @@
+body {
+    background: #8cd6ec;
+    text-shadow: 2px 2px blue;
+}
+
+fieldset {
+    border-radius: 100px;
+    background-color: pink; 
+    box-sizing: border-box;
+    padding: 2em;
+    shape-inside: content-box;
+    transition: 0.2s;
+    transform: rotate(10deg);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+fieldset:hover {
+    background: #fc7ec8;
+}
+
+h1 {
+    font-family: monospace;
+    font-size: 100px;
+}
+
+legend {
+    font-family: sans-serif;
+    font-size: 50px;
+    color: red;
+}
+
+p {
+    font-family: cursive;
+    color: purple;
+}
+
+section {
+    border-radius: 100px 50px;
+    background-color: #BADA55; 
+    box-sizing: border-box;
+    padding: 2em;
+    shape-inside: content-box;
+    transition: 0.2s ease-in-out;
+}
+
+section:hover {
+    background: blue;
+}
+
+img {
+    border-radius: 100px;
+}
+    
