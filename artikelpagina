@@ -31,9 +31,6 @@ article {
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
-}
-
-article {
     overflow: hidden;
 }
 
@@ -65,14 +62,12 @@ article:hover {
 }
 
 aside {
-    flex-direction: row-reverse;
+    flex-wrap: nowrap;
     border-radius: .5em;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     background-color: #f9f9f9;
     padding: 2em;
     margin-bottom: 1em;
-    width: 49%;
-    float: right;
     margin-right: 2%;
 }
 
@@ -110,6 +105,17 @@ header img[alt="logo"]:hover {
     padding: 2em;
     margin-bottom: 1em;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+footer {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 20%;
+    justify-content: space-between;
+}
+
+footer > section {
+    margin-right: 35%;
 }
 
 @media screen and (max-width: 30em) {
