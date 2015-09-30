@@ -1,0 +1,150 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fcc931;
+    font-family: 'Open Sans', 'Helvetica', sans-serif;
+    /*text-shadow: 2px 2px white;*/
+    /*opacity: 0.5;*/
+}
+
+nav li {
+    border-radius: 3em;
+    background-color: #d79b00;
+    padding: 0.5em;
+    margin: 1em ;
+    height: 1em;
+    width: 12em;
+}
+
+header > nav ul {
+    display: flex;
+    justify-content: space-between; 
+    list-style: none;
+    background-color: #d79b00;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+article {
+    overflow: hidden;
+}
+
+article > section {
+    background-color: #f9f9f9;
+    padding: 2em;
+    margin-bottom: 1em;
+    width: 30%;
+    float: left;
+    margin-left: 2%;
+}
+
+article > section:first-of-type {    
+    background-color: pink; 
+    
+}
+
+article {
+    border-radius: .5em;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    background-color: #8cd6ec;
+    padding: 2em;
+    margin-bottom: 1em;
+    transition: 0.2s ease-in-out;
+}
+
+article:hover {
+    background: #fc7ec8;
+}
+
+aside {
+    flex-direction: row-reverse;
+    border-radius: .5em;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    background-color: #f9f9f9;
+    padding: 2em;
+    margin-bottom: 1em;
+    width: 49%;
+    float: right;
+    margin-right: 2%;
+}
+
+section > img {
+    width: 20em;
+}
+
+a[title="opbouw studieprogramma"] {
+    color: red;
+    font-size: 1em;
+}
+
+header img[alt="logo"] {
+    width: 60em;
+    margin: 0 auto;
+    display: block;
+}
+
+.related {
+    background-color: #f9f9f9;
+    border-radius: .5em;
+    padding: 2em;
+    margin-bottom: 1em;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+@media screen and (max-width: 30em) {
+    
+    body {
+    background-color: purple;
+    font: 12px;
+    }
+    
+    article > section {
+    background-color: red;
+    padding: 2em;
+    margin-bottom: 1em;
+    width: 30%;
+    float: left;
+    margin-left: 2%;
+    font: 12px arial;
+    flex-direction: column;
+    }
+    
+    nav ul {
+    flex-direction: column;
+    }
+    
+    header img[alt="logo"] {
+    width: 10em;
+    }
+    
+    article > section{
+    flex-direction: column;
+    width: 30em;
+    }
+    
+}
+
+@media screen and (min-width: 30em) and (max-width: 48em) {
+    
+    body {
+    background-color: red;
+    font: 12px;
+    }
+    
+    header img[alt="logo"] {
+    width: 30em;
+    }
+    
+    nav ul {
+    flex-direction: column;
+    }
+    
+}
