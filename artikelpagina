@@ -91,6 +91,19 @@ header img[alt="logo"] {
     display: block;
 }
 
+header img[alt="logo"]:hover {
+    animation: roll 2s;
+}
+
+@keyframes roll {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} /*https//css-tricks.com/almanac/properties/t/transform/*/ 
+
 .related {
     background-color: #f9f9f9;
     border-radius: .5em;
